@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /usr/share/biglinux/biglinux-settings/
+exec -a biglinux-settings python main.py
