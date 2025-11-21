@@ -1,15 +1,15 @@
 # Maintainer: Bruno Goncalves <bigbruno@gmail.com>
 
 pkgname=biglinux-settings
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
+pkgver=25.09.22
+pkgrel=0023
 arch=('any')
 license=('GPL')
 pkgdesc="Scripts and configuration files created in GTK4 that simplify switching BigLinux operation."
 depends=('gtk4' 'python' 'polkit' 'zenity')
 url="https://github.com/biglinux/$pkgname"
 conflicts=('biglinux-settings-gnome')
-source=("git+${url}.git")
+source=("git+${url}.git#branch=stable-2025-09-21")
 md5sums=(SKIP)
 # if [ -e "${pkgname}.install" ];then
 #     install=${pkgname}.install
